@@ -58,9 +58,9 @@ describe 'Transfer' do
         transfer.execute_transaction
         expect(amanda.balance).to eq(950)
         expect(avi.balance).to eq(1050)
-        expect(transfer.status).to eq("complete")
+        expect(transfer.status).to eq("complete") 
         transfer.execute_transaction
-        expect(amanda.balance).to eq(950)
+        expect(amanda.balance).to eq(950) 
         expect(avi.balance).to eq(1050)
       end
 
